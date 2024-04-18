@@ -29,52 +29,39 @@
             }]
         }
     </script>
-
+    <script type="module"> import {initialize } from "/Scripts/menu.js" 
+        initialize("Home")</script>
+    <script type="module" src="/Scripts/mouseEvents.js"></script>
     <title>Jay's Portfolio</title>
 </head>
 <body>
     <header>
         Jay's Portfolio
         <nav>
-            <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href = "Projects/index.html" title="Project Page">Projects</a></li>
-                <li><a href = "Blogs/index.html" title="Weekly Blogs" >Blogs</a></li>
-                <li><a href = "Design/index.html" title="Web Design">Web Design</a></li>
-                <li><a href = "Profile/index.html" title="Web Design">Profile</a></li>
-            </ul>
         </nav>
     </header>
     <hr>
     <hr>
     <main>
         <h1>Welcome ~</h1>
-        <a href="Projects/index.html">
-            <div>
+        <a href="Projects/index.html" id="banner">
                 <h2>Projects</h2>
                 <p>A collection of my game-dev and coding projects</p>
-            </div>
         </a>
         <hr>
-        <a href="Blogs/index.html">
-            <div>
+        <a href="Blogs/index.html" id="banner">
                 <h2>Blogs</h2>
                 <p>Weekly blogs, essays and interesting topics</p>
-            </div>
         </a>
         <hr>
-        <a href="Design/index.html">
-            <div>
+        <a href="Design/index.html" id="banner">
                 <h2>Web Design</h2>
                 <p>The process of designing this website</p>
-            </div>
         </a>
         <hr>
-        <a href="Profile/index.html">
-            <div>
+        <a href="Profile/index.html" id="banner">
                 <h2>Profile</h2>
                 <p>More about me ~</p>
-            </div>
         </a>
         <hr>
     </main>
