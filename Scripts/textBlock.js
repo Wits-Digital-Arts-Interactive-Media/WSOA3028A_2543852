@@ -1,26 +1,3 @@
-const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRXTUVWXYZ123456789"
-const box = document.getElementById("box")
-
-
-function randomChar(){
-    let len = chars.length;
-    let c = chars[Math.floor(Math.random()*len)+1];
-    return c;
-}
-
-
-function randomString(){
-    let _string = "";
-    for (let j = 0; j < 10; j++){
-        for(let i = 0; i <= 1000; i++){
-            _string += randomChar();
-        }
-        _string += "\n";
-    }
-    return _string;
-}
-
-
 const welcome = document.querySelector("main > h1");
 
 function randomWelcome(){
@@ -36,9 +13,32 @@ function randomWelcome(){
         }
         newString += _c;
     }
-    return newString;
+
+    welcome.innerText = newString;
 }
 
-onmousemove = e =>{
-    box.innerText = randomString();
+function animWelcome(){
+    const _string = "Welcome";
+    let newString = _string;
+    let i = 0;
+
+    function iterate(){
+        newString += " ~";
+        console.log(i);
+        i++;
+        if(i == 4){
+            i = 0;
+            newString = _string;
+            console.log("reset");
+            welcome.innerText = _string;
+        } else{
+            welcome.innerText = newString;
+        }
+    }
+    
+    
+    setInterval(iterate, 1000);
 }
+
+animWelcome();
+// setInterval(randomWelcome, 1000);
