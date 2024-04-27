@@ -50,9 +50,11 @@ function blogOpenClose(){
         closeButton.innerText = "close";
         blogContent[i].appendChild(document.createElement("br"));
         blogContent[i].appendChild(closeButton);
+
         closeButton.addEventListener("click", (event)=>{
             blogContent[i].setAttribute("hidden", "");
         })
+
     }
 }
 
