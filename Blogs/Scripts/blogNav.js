@@ -55,7 +55,6 @@ function blogOpenClose(){
             blogContent[i].setAttribute("hidden", "until-found");
             blogAnchors[i].scrollIntoView();
         })
-
     }
 }
 
