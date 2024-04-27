@@ -6,6 +6,8 @@ const menuItems = [
     {name:"Profile", href:  "Profile/index.html"}
 ];
 
+const menuButtons = [];
+
 //creating a nav-bar
 export function initialize (currentPage){
     const nav = document.querySelector("header > nav");  //finding the nav element
@@ -17,10 +19,7 @@ export function initialize (currentPage){
             a.innerText = menuItem.name;     //change the text
             if (currentPage == "Home"){
                 a.setAttribute("href", menuItem.href);   //set the href attribute to the menuItem.href
-            } else if(currentPage == "DesignPages"){
-                const _href = "/" + menuItem.href;
-                a.setAttribute("href", _href);
-            } else{
+            }else{
                 const _href = "../" + menuItem.href
                 a.setAttribute("href", _href);
             };
@@ -29,7 +28,7 @@ export function initialize (currentPage){
             li.innerText = menuItem.name;
         }
         ul.appendChild(li);  //append the list Item to the unordered list
-        
+        menuButtons.push(li);
     }
     nav.appendChild(ul);     //append the unordered list to the nav-element
 }
