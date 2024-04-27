@@ -52,7 +52,7 @@ function blogOpenClose(){
         blogContent[i].appendChild(closeButton);
 
         closeButton.addEventListener("click", (event)=>{
-            blogContent[i].setAttribute("hidden", "");
+            blogContent[i].setAttribute("hidden", "until-found");
         })
 
     }
