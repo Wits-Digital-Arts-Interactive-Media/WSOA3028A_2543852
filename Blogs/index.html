@@ -937,6 +937,165 @@
             </div>
         </article>
         <hr>
+        <article>   <!--Essay 1-->
+            <nav></nav>
+            <a><h2>Essay 1: Ethis of UI & UX</h2></a>
+            <p>
+                by
+                <a class="p-author h-card" href="../Profile/index.html">Jay-Lee Shih</a>
+                <time class="dt-published" datetime="2024-04-08">
+                    08 April 2024
+                </time>
+            </p>
+            <p class="p-summary">
+                An analysis of a South African Website and its ethics behind the design.
+            </p>
+            <div class="e-content">
+                <blockquote>
+                    <p>
+                        "...design is the rendering of intent."
+                    </p>
+                    <footer>
+                        - Chris Kiess, <cite>The Good, the Bad and the Ugly of Ethics in UX Design</cite>
+                    </footer>
+                </blockquote>
+                <p>
+                    The ethics of a website are strongly governed by the intent of the designers. This essay will look at the ethics of a South African Website and analyze the intent behind their design. Although ethics can be a “grey area” topic, I will attempt to paint a scale as to how ethical the intent of the designers are. The intent of a designer can be benevolent or ill and misdirected. There are certain patterns that the designers will follow or avoid in order to carry out their intent. The website I will be looking at is Dash Digital. They are a digital design company that assists businesses in creating their digital brand. Their website has been given multiple awards by an online platform that celebrates excellent web design called <cite>Awwwards</cite>.
+                </p>
+                <h3>UI & UX Ethics</h3>
+                <p>
+                    The following are some of the key ethical considerations that user interfaces and experiences should pay attention to. These key aspects are what I will be comparing Dash Digital’s website to in order to assemble a well-rounded analysis.
+                </p>
+                <ol>
+                    <li>
+                        Transparency
+                        <ul>
+                            <li>
+                                The designs of the website must aim to be transparent and honest to the user. The website should not be deceptive or misleading. 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Inclusivity
+                        <ul>
+                            <li>
+                                The user interface and experience should be accessible to all users. The designers must consciously design with regards to the user’s technological proficiency, abilities, and disabilities. 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Privacy and Security
+                        <ul>
+                            <li>
+                                The user’s privacy is of utmost importance. The data that is collected, stored, used, or shared must be protected from any external data breaches. This includes asking for the users consent and control over their privacy.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        User Empathy
+                        <ul>
+                            <li>
+                                Empathize with the users’ needs and preferences. This requires understanding the interface and experience from a user perspective. Empathy creates a positive experience with the website and also includes the idea of being culturally sensitive. Ensuring that the website doesn’t come across as offensive or discriminatory to any specific cultural groups. 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Influence and Persuation
+                        <ul>
+                            <li>
+                                Persuasive techniques should be carefully considered. This is a very tricky topic as the consequence of a misstep could be considered as an attempt to manipulate the user. Designers should encourage user engagement without the use of dark design patterns. 
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>First Impressions</h3>
+                <p>
+                    The first thing you see when entering Dash Digital’s website is a loading screen. Whilst the DOM and CSSOM trees are being parsed, the website displays a bar that informs the user how long they must wait for the parsing process to be completed. This is a subtle yet important detail that ensures complete transparency with the user. Instead of being greeted with a blank screen that gives the user no feedback, users are able to understand that there is a wait time before the website is fully loaded. This function empathizes with users that are less technologically proficient creating an inclusive user experience. 
+                </p>
+                <p>
+                    When the user decides to go to another page within the website, they are also presented with another loading screen. The design is slightly different from the opening loading screen, but it still operates under the same circumstances, serving as a communicative tool between the website and the user. This recurring pattern allows users to formulate a consistent understanding of what the website is doing when certain visuals appear. 
+                </p>
+                <p>
+                    Moving away from the loading screens, one of the first things that users notice when looking at the website is its colour palate. The colours chosen for the text and background not only ensure that the text is legible, but it is also accessible for users that are colour blind. Using the dev-tool Color Enhancer (Kumari, 2021)  I was able to adjust the colours of the website to emulate what a user with colorblindness would see. Apart from the images on the website, the text and background remain almost unchanged with only a slight hue variation. 
+                </p>
+                <table border="1">
+                    <tr>
+                        <th>Colour Blindness</th>
+                        <td>Website Photos</td>
+                    </tr>
+                    <tr>
+                        <th>None</th>
+                        <td>
+                            <img src="Images/opt0.png" title="no filter" alt="Dash Digital home page without a colourblind emulation">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Option 1
+                            <br>
+                            <img src="Images/ColourBlind1.png" title="Option 1" alt="Colourblind option number 1">
+                        </th>
+                        <td>
+                            <img src="Images/opt1.png" title="filter option 1" alt="Dash Digital home page with colourblind emulation choice 1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Option 2
+                            <br>
+                            <img src="Images/ColourBlind2.png" title="Option 2" alt="Colourblind option number 2">
+                        </th>
+                        <td>
+                            <img src="Images/opt1.png" title="filter option 2" alt="Dash Digital home page with colourblind emulation choice 2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Option 3
+                            <br>
+                            <img src="Images/ColourBlind3.png" title="Option 3" alt="Colourblind option number 3">
+                        </th>
+                        <td>
+                            <img src="Images/opt1.png" title="filter option 3" alt="Dash Digital home page with colourblind emulation choice 3">
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    In order to get better insight into the accessibility for visually impaired users, I used the screen reader Speechify (Weitzman, 2017). Since the functionality of a screen reader is dependent on the semantic markup of the website, I could get a general sense of how semantic and accessible the website was. My experience with using Speechify on Dash Digital’s website was overall acceptable, but there were a few instances where the screen reader would read a button in confusing and redundant ways. This indicates that the semantic markup of that element could be improved upon. But overall, apart from the slight inconvenience, the website was made accessible for screen readers. 
+                </p>
+                <h3>User Experience</h3>
+                <p>
+                    The user experience of Dash Digital’s website felt friendly and approachable. One of the, possibly, less noticeable aspects of their website is the way they ask the user for permission to use cookies. The user isn’t immediately greeted with a pop-up window asking for permission. Dash Digital instead puts a small tab on the bottom right corner of the website asking whether the user permits the use of cookies or not. This detail highlights that there aren’t any dark design patterns used in order to force the user to make a choice. We can also argue that the wording might seem a bit vague, and the options of the tab are limited bordering on the grey area of ethics. The UX principles used on the tab might operate within the grey area but within the grander scheme of the website, the intention of not forcing users to make a decision by lowering its significance makes this feature ethically sound. The intention wasn’t to manipulate, but rather to offer an option. 
+                </p>
+                <p>
+                    The website makes good use of the ‘similarity and difference’ principle. This is evident in the interactivity of the hyperlinks and buttons. Whenever the user hovers over a hyperlink or a button, a short animation plays. The visual representation of the button and the hyperlink are very different, and the same goes for the animations. All hyperlinks look the same and play the same animations. The buttons also follow the same conventions. These two different elements are repeated throughout the website, allowing users to safely assume that all the elements following the same conventions do the same thing. 
+                </p>
+                <p>
+                    The website also includes a lot of interactive elements. When the user scrolls through the website, certain lines of text appear or play a smooth animation. This captivates the user’s attention without the intention of misdirecting them. The added visual arousal makes interacting with the website more interesting and memorable. 
+                </p>
+                <p>
+                    The navigation is flawlessly integrated into the website, carefully obeying the 3-click rule, which means that users are able to navigate to where they want to be within three clicks. The navigation bar can be toggled on or off allowing for a more focused browsing experience, but on certain pages the navigation bar automatically disappears when the user scrolls down and only reappears when the user is at the top of the page. This creates an inconsistency throughout the website which may cause minor confusion. 
+                </p>
+                <p>
+                    The design of the website is responsive to different aspect ratios. The visual aesthetics remain consistent and also provides the same functionality. A good point to mention is that on a touch screen device, the interactable images, hypertexts, and buttons don’t play animations anymore. This slight change of UX makes it so that the users interacting with the website on a touchscreen device have a less reactive experience.
+                </p>
+                <h3>User Interface</h3>
+                <p>
+                    The visual hierarchy of a website can influence the way the users interact with the piece of media. Although mentioned in an earlier point, the cookies tab holds very insignificant visual traffic. A few aspects that might captivate the user’s attention would be the different colour that is used for the element. Overall, the intention of moving the cookie tab to the bottom right of the screen makes for a non-hostile approach to asking for user permission. 
+                </p>
+                <p>
+                    The use of whitespace throughout the website creates a comfortable digital environment for the user to navigate. It offers breathing room for the user and enhances visual clarity and readability. Whether or not a website includes sufficient whitespace can determine how hostile its digital environment feels for the user. An example of a website that completely rejects the idea of whitespace would be the South African Home Affairs website (Affairs, 2024). Apart from violating non-hostile design principle, I will mainly focus on the use of whitespace throughout the website. The website offers the user a main information area leaving a border on the left and right of the page. Although in concept it seems to have good intentions, in actuality the main idea of whitespace gets thrown out the window. The background is instead a visual pattern that creates a lot of visual traffic, making the website very visually overstimulating. This paired with the main colour theme makes for an uncomfortable user interface. Although Dash Digital’s website does not include the left and right borders, it successfully integrates whitespace into the user interface to create a non-hostile environment. 
+                </p>
+                <p>
+                    Dash Digital’s website uses a “Founders Grotesk” font all throughout. Founders Grotesk is a modern sans-serif typeface. Sans-serif fonts in “…electronic or virtual contexts …  is a little easier to read.” (Anonomus, n.d.)  This font makes it easier for users to engage with the text of the website. The text is arranged so that it is readable, and the Founders Grotesk font makes the text easily legible. This makes for a successful use in typography to create a positive user interface. 
+                </p>
+                <p>
+                    The branding throughout the website remains consistent and reflects Dash Digital’s identity. The colour scheme, fonts, imagery, and logos reinforce the companies brand identity, generating a sense of cohesiveness. The modest and simplistic aesthetic make it so that the user is not bombarded with an overwhelming amount of information. Information is segmented into digestible chunks, making it so that the synthesis of the information comes at a comfortable pace. 
+                </p>
+                <h3>Conclusion</h3>
+                <p>
+                    My analysis of Dash Digital’s website was based off the transparency, inclusivity, privacy and security, user empathy, and persuasive techniques used throughout the website. As mentioned, Dash Digital’s website meets the ethical standards to an acceptable degree. Dash Digital clearly shows that their intentions are governed by a user centered philosophy.  Although there may be a few short comings, their intentions were directed to benefit the audience and not just for commercial success. 
+                </p>
+            </div>
+        </article>
+        <hr>
         <article> <!-- Planet of Lana -->
             <nav></nav>
             <a><h2>Analysis 1: Planet of Lana</h2></a>
@@ -951,7 +1110,7 @@
                 Delving into how Planet of Lana creates an immersive gameplay experience.
             </p>
 
-            <div>
+            <div class="e-content">
                 <img src="Images/PlanetOfLana_title.png" alt="Planet of Lana poster image" height="400" title="Planet of Lana">
                 <p>
                     Wishfully (2023) Planet of Lana [Video Game]. Thunderful Publishing.
