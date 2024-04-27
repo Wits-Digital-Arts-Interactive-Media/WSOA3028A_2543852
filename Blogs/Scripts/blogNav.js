@@ -1,6 +1,8 @@
 const blogNav = document.querySelector("main > nav")
 const blogArticles = document.querySelectorAll("main > article");
-const blogHeaders = document.querySelectorAll("main > article > h2");
+const blogContent = document.querySelectorAll("main > article > div");
+const blogAnchors = document.querySelectorAll("main > article > a");
+const blogHeaders = document.querySelectorAll("main > article > a > h2");
 
 function createBlogNav(){
     const ul = document.createElement("ul");
@@ -33,5 +35,26 @@ function backToTop(){
     }
 }
 
-createBlogNav();
+function blogOpenClose(){
+    for (let i=0; i<blogAnchors.length; i++) {
+        const splitHeader = blogHeaders[i].innerText.split(":");
+        const front = splitHeader[0];
+        const trimHeader = front.replaceAll(" ","") + "Content";
+        let href = "#" + trimHeader;
+        blogAnchors[i].setAttribute("href", href);
+
+        blogContent[i].setAttribute("id", trimHeader);
+        blogContent[i].setAttribute("hidden", "until-found");
+
+        const closeButton = document.createElement("button");
+        closeButton.innerText = "close";
+        blogContent[i].appendChild(document.createElement("br"));
+        blogContent[i].appendChild(closeButton);
+        closeButton.addEventListener("click", (event)=>{
+            blogContent[i].setAttribute("hidden", "");
+        })
+    }
+}
+
+blogOpenClose();
 backToTop();
