@@ -29,8 +29,8 @@ function animateTrail(){
     let y = coords.y;
 
     mouseTrailElements.forEach(function (circle, index){
-        circle.style.left = x - 15 + "px";
-        circle.style.top = y - 15 + "px";
+        circle.style.left = x - 17 + "px";
+        circle.style.top = y - 17 + "px";
         circle.x = x;
         circle.y = y;
 
@@ -39,4 +39,3 @@ function animateTrail(){
         y += (nextCircle.y - y) * 0.25;
     });
 }
-
