@@ -1,0 +1,53 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background-color:#2F3E46;
+    color:  #CAD2C5;
+    margin: 0%;
+}
+header{
+    font-size: 2em;
+    background-color: #354f52;
+    display: flex;
+    padding: 1em;
+    width: 100px;
+}
+
+main{
+    padding: 1em;
+}
+
+footer{
+    padding: 1em;
+    font-style: italic;
+}
+
+a:link{
+    color: #CAD2C5;
+}
+a:visited{
+    color: #84a98c;
+}
+
+#webName{
+    padding-top: 1.15em;
+}
+
+header nav{
+    background-color: #354f52;
+}
+
+header nav ul{
+    position: relative;
+    list-style: none;
+    background-color: #354f52;
+    display: flex;
+}
+
+header nav ul li{
+    background-color: #354f52;
+    margin: 4px;
+}
+
+#banner{
+    background-color: #354f52;
+}

@@ -60,3 +60,4 @@ function blogOpenClose(){
 
 blogOpenClose();
 backToTop();
+createBlogNav();
