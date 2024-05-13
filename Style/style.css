@@ -1,0 +1,67 @@
+body {
+    font-family: 'Satoshi', sans-serif;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+}
+
+header{
+    font-size: 2em;
+    display: flex;
+    width: 100vw;
+    height: 50px;    
+    padding: 1rem;
+}
+
+main{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer{
+    padding: 1em;
+    font-style: italic;
+}
+
+hr{
+    margin: 0%;
+}
+
+#webName{
+    height: 100%;
+    width: 25%;
+    text-align: start;
+    
+}
+
+header nav{
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+
+header nav ul{
+    margin: 0%;
+    padding-left: 0%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    height: 100%;
+    width: max-content;
+    text-overflow: clip;
+    margin-left: 5%;
+}
+
+header nav ul li a{
+    height: 100%;
+    text-overflow: clip;
+    width: max-content;
+}
