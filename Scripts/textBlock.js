@@ -24,12 +24,10 @@ function animWelcome(){
 
     function iterate(){
         newString += " ~";
-        console.log(i);
         i++;
         if(i == 4){
             i = 0;
             newString = _string;
-            console.log("reset");
             welcome.innerText = _string;
         } else{
             welcome.innerText = newString;

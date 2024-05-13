@@ -55,17 +55,30 @@ header nav ul li{
     margin-right: 1rem;
 }
 
+h1{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 header nav ul li a{
     height: 100%;
     text-overflow: clip;
+    text-decoration: overline;
 }
 header nav ul li a:visited{
     color: black;
     height: 100%;
     text-overflow: clip;
 }
+header nav ul li a:hover{
+    animation: hrefUnderline 0.1s 0s 1 alternate forwards;
+}
 
-h1{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+@keyframes hrefUnderline {
+    from{
+        text-decoration: overline;
+    }
+    to{
+        text-decoration: underline;
+    }
 }
