@@ -7,11 +7,12 @@ body {
 }
 
 header{
-    font-size: 2em;
     display: flex;
-    width: 100vw;
-    height: 50px;    
+    justify-content: flex-end;
+    align-items: center;
+    height: 25px;    
     padding: 1rem;
+    font-size: 1em;
 }
 
 main{
@@ -31,37 +32,40 @@ hr{
 }
 
 #webName{
-    height: 100%;
-    width: 25%;
-    text-align: start;
-    
+    margin-right: auto;
+    width: fit-content;
 }
 
 header nav{
     height: 100%;
-    width: 100%;
-    text-align: right;
 }
 
 header nav ul{
-    margin: 0%;
     padding-left: 0%;
+    margin-top: 0%;
+    margin-left: auto;
     height: 100%;
-    width: 100%;
-    position: relative;
+    width: fit-content;
     list-style: none;
-    display: flex;
 }
 
 header nav ul li{
-    height: 100%;
-    width: max-content;
-    text-overflow: clip;
-    margin-left: 5%;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
 
 header nav ul li a{
     height: 100%;
     text-overflow: clip;
-    width: max-content;
+}
+header nav ul li a:visited{
+    color: black;
+    height: 100%;
+    text-overflow: clip;
+}
+
+h1{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
