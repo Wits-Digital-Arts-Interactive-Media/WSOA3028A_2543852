@@ -39,3 +39,4 @@ function animateTrail(){
         y += (nextCircle.y - y) * 0.25;
     });
 }
+
