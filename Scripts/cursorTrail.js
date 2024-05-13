@@ -19,7 +19,7 @@ mouseTrailElements.forEach(function (circle){
 
 window.addEventListener("mousemove", function(e){
     coords.x = e.clientX;
-    coords.y = e.clientY;
+    coords.y = e.pageY;
 
     animateTrail();
 });
