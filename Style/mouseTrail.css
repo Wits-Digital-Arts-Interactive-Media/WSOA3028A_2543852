@@ -1,8 +1,10 @@
 .mouseTrail{
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: black;
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: white;
+    mix-blend-mode: difference;
     position: absolute;
     top: 0;
     left: 0;
