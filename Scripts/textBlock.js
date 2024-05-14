@@ -38,5 +38,5 @@ function animWelcome(){
     setInterval(iterate, 1000);
 }
 
-animWelcome();
+//animWelcome();
 // setInterval(randomWelcome, 1000);

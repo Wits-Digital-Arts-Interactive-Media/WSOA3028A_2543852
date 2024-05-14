@@ -4,13 +4,11 @@ body {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: white;
-
 }
 
 header{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     height: 25px;    
     padding: 1rem;
     font-size: 1em;
@@ -37,33 +35,39 @@ hr{
     width: fit-content;
 }
 
-header nav{
-    height: 100%;
-}
-
 header nav ul{
     padding-left: 0%;
     margin-top: 0%;
     margin-left: auto;
     height: 100%;
-    width: fit-content;
-    list-style: none;
+    width: fit-content; /* makes it the size of all the elements inside*/
+    list-style: none;   /* removes the points on the list*/
 }
 
 header nav ul li{
-    display: inline-flex;
-    justify-content: flex-end;
+    display: inline-flex;   /*the size of the content inside the li*/
     margin-right: 1rem;
 }
 
+.headerContainer{
+    display: inline-block;
+}
+
 h1{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 4rem;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 1.5s,
+        cursor 0.4s step-end infinite alternate;
 }
 
 header nav ul li a{
     height: 100%;
-    text-overflow: clip;
     text-decoration: overline;
 }
 header nav ul li a:visited{
@@ -72,14 +76,23 @@ header nav ul li a:visited{
     text-overflow: clip;
 }
 header nav ul li a:hover{
-    animation: hrefUnderline 0.1s 0s 1 alternate forwards;
+    text-decoration: underline;
 }
 
-@keyframes hrefUnderline {
-    from{
-        text-decoration: overline;
+::selection{
+    background-color: black;
+    color: white;
+    text-decoration: white;
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
     }
-    to{
-        text-decoration: underline;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
     }
 }
