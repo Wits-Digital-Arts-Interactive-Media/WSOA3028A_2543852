@@ -1,12 +1,45 @@
 
-h2{
-    background-color: inherit;
+.card{
+    border-radius: 0.5rem;
+    border-color: rgba(206, 206, 206, 0.118);
+    border-style: solid;
+    /* background-color: rgb(238, 238, 238); */
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
 }
-p{
-    background-color: inherit;
+.card::after{
+    background: linear-gradient(
+        transparent,
+        black,
+        transparent
+    );
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    left: -1px;
+    top: 0%;
+    opacity: 0;
+    content: "";
+    transition: opacity 600ms ease,
+                top 600s ease,
+                height 600ms ease;
+}
+.card:hover::after{
+    opacity: 1;
+    height: 100%;
+    top:50%;
 }
 
-.banner{
-    width: 200px;
-    height: 100px;
+.card a{
+    text-decoration: none;
 }
+
+.card a p,
+.card a h2{
+    margin: 0%;
+    color: black;
+}
+

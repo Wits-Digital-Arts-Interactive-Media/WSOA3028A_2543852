@@ -23,7 +23,7 @@ mouseTrailElements.forEach(function (element){
 //everytime the mouse moves it updates the coord variables and calls the animateTrail funciton
 window.addEventListener("mousemove", function(e){
     coords.x = e.clientX;   //the x-axis of the client
-    coords.y = e.pageY;     //the y-axis of the page so that the element doest get left behind :(
+    coords.y = e.clientY;     //the y-axis of the page so that the element doest get left behind :(
 
     animateTrail();
 });

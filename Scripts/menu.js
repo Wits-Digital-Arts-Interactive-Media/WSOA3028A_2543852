@@ -26,7 +26,7 @@ export function initialize (currentPage){
             li.appendChild(a);   //append the a-Element to the List Item
         }else{
             li.innerText = menuItem.name;
-            li.style.textDecoration = "underline";
+            li.setAttribute("id", "activePage");
         }
         ul.appendChild(li);  //append the list Item to the unordered list
         menuButtons.push(li);

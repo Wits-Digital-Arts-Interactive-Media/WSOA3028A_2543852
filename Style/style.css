@@ -1,3 +1,13 @@
+:root{
+    --gradient: linear-gradient(
+        to right,
+        rgb(111, 7, 197),
+        rgb(187, 40, 232),
+        rgb(244, 12, 147),
+        rgb(111, 7, 197)
+    )
+}
+
 body {
     font-family: 'Satoshi', sans-serif;
     margin: 0%;
@@ -17,8 +27,6 @@ header{
 main{
     padding-top: 0%;
     padding-bottom: 0%;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 footer{
@@ -36,24 +44,65 @@ hr{
 }
 
 header nav ul{
-    padding-left: 0%;
     margin-top: 0%;
-    margin-left: auto;
-    height: 100%;
-    width: fit-content; /* makes it the size of all the elements inside*/
     list-style: none;   /* removes the points on the list*/
 }
 
 header nav ul li{
     display: inline-flex;   /*the size of the content inside the li*/
     margin-right: 1rem;
+    position: relative;
+}
+header nav ul li::after{
+    background: linear-gradient(
+    90deg,
+    transparent,
+    black,
+    transparent
+    );
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    opacity: 0;
+    content: "";
+    transition: opacity 600ms ease,
+    width 600ms ease;
+}
+header nav ul li:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+
+#activePage{
+    position: relative;
+}
+#activePage::after{
+    background: linear-gradient(
+    90deg,
+    transparent,
+    black,
+    transparent
+    );
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    content: "";
+    opacity: 1;
+    
 }
 
 .headerContainer{
     display: inline-block;
+    padding-left: 1rem;
 }
 
 h1{
+    color: black;
     margin-top: 80px;
     margin-bottom: 80px;
     font-size: 4rem;
@@ -62,21 +111,39 @@ h1{
     white-space: nowrap;
     overflow: hidden;
     animation: 
-        typing 1.5s,
-        cursor 0.4s step-end infinite alternate;
+    typing 1.5s,
+    cursor 0.4s step-end infinite alternate;
+}
+h1 .myName{
+    animation: background-pan 20s linear infinite;
+    /* background: linear-gradient(
+        to right,
+        #6f07c5,
+        #bb28e8,
+        #f40c93,
+        #6f07c5
+    ); */
+    background: linear-gradient(
+        to right,
+        rgb(26, 26, 237),
+        rgb(113, 188, 254),
+        rgb(24, 146, 247),
+        rgb(26, 26, 237)
+    );
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
 }
 
 header nav ul li a{
     height: 100%;
-    text-decoration: overline;
+    text-decoration: none;
 }
 header nav ul li a:visited{
     color: black;
     height: 100%;
     text-overflow: clip;
-}
-header nav ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 ::selection{
@@ -84,6 +151,7 @@ header nav ul li a:hover{
     color: white;
     text-decoration: white;
 }
+
 
 @keyframes cursor {
     50%{
@@ -94,5 +162,11 @@ header nav ul li a:hover{
 @keyframes typing {
     from{
         width: 0;
+    }
+}
+
+@keyframes background-pan {
+    50%{
+        background-position: -300%;
     }
 }
