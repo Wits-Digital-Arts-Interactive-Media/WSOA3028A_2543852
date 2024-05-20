@@ -75,7 +75,6 @@ header nav ul li:hover::after{
     width: 100%;
 }
 
-
 #activePage{
     position: relative;
 }
@@ -98,23 +97,38 @@ header nav ul li:hover::after{
 
 .headerContainer{
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: 2rem;
+}
+
+.subheaderContainer{
+    width: fit-content;
+    padding-left: 2rem;
+}
+.subheaderContainer p{
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  typing 1.5s;
 }
 
 h1{
     color: black;
     margin-top: 80px;
-    margin-bottom: 80px;
-    font-size: 4rem;
+    margin-bottom: 0px;
+    font-size: 5rem;
     border-right: 5px solid;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: 
-    typing 1.5s,
-    cursor 0.4s step-end infinite alternate;
+    animation:  typing 1.5s,
+                cursor 0.4s step-end infinite alternate;
 }
-h1 .myName{
+
+.coolFont{
     animation: background-pan 20s linear infinite;
     /* background: linear-gradient(
         to right,
