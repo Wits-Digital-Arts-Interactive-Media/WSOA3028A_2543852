@@ -3,7 +3,7 @@
     border-radius: 0.5rem;
     border-color: rgba(206, 206, 206, 0.118);
     border-style: solid;
-    /* background-color: rgb(238, 238, 238); */
+    border-width: 3px;
     margin: 1rem;
     padding: 1rem;
     padding-top: 3rem;
@@ -11,7 +11,7 @@
     position: relative;
 }
 .card::after{
-    background: linear-gradient(
+    /* background: linear-gradient(
         transparent,
         black,
         transparent
@@ -25,12 +25,30 @@
     content: "";
     transition: opacity 600ms ease,
                 top 600s ease,
-                height 600ms ease;
+                height 600ms ease; */
+    background: linear-gradient(
+    90deg,
+    transparent,
+    black 7.5%,
+    transparent
+    );
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    opacity: 0;
+    content: "";
+    transition: opacity 1000ms ease,
+                width 2000ms ease;
+
 }
 .card:hover::after{
-    opacity: 1;
+    /* opacity: 1;
     height: 100%;
-    top:50%;
+    top:50%; */
+    opacity: 1;
+    width: 100%;
 }
 
 .card:hover{

@@ -1,0 +1,16 @@
+section{
+    border-radius: 0.5rem;
+    border-color: rgba(206, 206, 206, 0.118);
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0%;
+}

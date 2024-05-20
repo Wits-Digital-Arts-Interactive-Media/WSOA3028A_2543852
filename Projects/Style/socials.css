@@ -1,0 +1,53 @@
+.socials{
+    justify-content: first baseline;
+    padding-left: 2rem;
+}
+
+.button{
+    display: flex;
+    font-size: 1.5rem;
+    background: linear-gradient(
+        to right,
+        rgb(26, 26, 237),
+        rgb(113, 188, 254),
+        rgb(24, 146, 247),
+        rgb(26, 26, 237)
+    );
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    transition: background-position 600ms ease;
+    position: relative;
+}
+.button:hover{
+    background-position: 100%; 
+}
+
+.button::after{
+    background: linear-gradient(
+        90deg,
+        transparent,
+        black 7.5%,
+        transparent
+        );
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    opacity: 0;
+    content: "";
+    transition: opacity 1000ms ease,
+                width 2000ms ease;
+}
+.button.hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+
