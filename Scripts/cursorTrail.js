@@ -12,7 +12,7 @@ function createTrailElements(num){
     }
 }
 
-createTrailElements(1);
+createTrailElements(0);
 
 //loop through each element in the mouseTrailElements array and make the x and y = 0
 mouseTrailElements.forEach(function (element){

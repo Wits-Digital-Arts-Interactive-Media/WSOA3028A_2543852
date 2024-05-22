@@ -3,8 +3,11 @@
     height: 34px;
     width: 34px;
     border-radius: 34px;
-    background-color: white;
-    mix-blend-mode: difference; /* blends background colour with the elements it overlays*/
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     left: 0;

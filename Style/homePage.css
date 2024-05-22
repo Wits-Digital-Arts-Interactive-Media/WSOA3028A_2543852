@@ -1,7 +1,7 @@
 
 .card{
     border-radius: 0.5rem;
-    border-color: rgba(206, 206, 206, 0.118);
+    border-color: rgb(243, 243, 243);
     border-style: solid;
     border-width: 3px;
     margin: 1rem;
@@ -26,6 +26,7 @@
     transition: opacity 600ms ease,
                 top 600s ease,
                 height 600ms ease; */
+    border-radius: 25%;
     background: linear-gradient(
     90deg,
     transparent,
@@ -35,7 +36,7 @@
     width: 25%;
     height: 3px;
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     left: 0%;
     opacity: 0;
     content: "";
