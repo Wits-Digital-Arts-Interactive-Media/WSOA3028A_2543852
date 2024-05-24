@@ -1,8 +1,8 @@
-const blogNav = document.querySelector("main > nav")
-const blogArticles = document.querySelectorAll("main > article");
-const blogContent = document.querySelectorAll("main > article > div");
-const blogAnchors = document.querySelectorAll("main > article > a");
-const blogHeaders = document.querySelectorAll("main > article > a > h2");
+const blogNav = document.getElementById("blogNav");
+const blogArticles = document.getElementsByClassName("writting");
+const blogContent = document.getElementsByClassName("e-content");
+const blogAnchors = document.getElementsByClassName("blogAnchor");
+const blogHeaders = document.getElementsByClassName("blogName");
 
 function createBlogNav(){
     const ul = document.createElement("ul");
@@ -15,7 +15,8 @@ function createBlogNav(){
         const trimHeader = front.replaceAll(" ","");
         let href = "#" + trimHeader;
         a.setAttribute("href", href);
-        a.innerText = blogHeaders[i].innerText;
+        // a.innerText = blogHeaders[i].innerText;
+        a.innerText = trimHeader;
 
         blogArticles[i].setAttribute("id", trimHeader);
 

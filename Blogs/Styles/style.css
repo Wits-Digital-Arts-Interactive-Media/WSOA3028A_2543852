@@ -1,0 +1,21 @@
+.blogsContainer{
+    padding-left: 2rem;
+    position: relative;
+    display: flex;
+}
+
+.articleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    width: 25%;
+}
+
+nav ul{
+    list-style: none;
+    margin-top: 0%;
+    padding-left: 0%;
+    padding-right: 1rem;
+}
