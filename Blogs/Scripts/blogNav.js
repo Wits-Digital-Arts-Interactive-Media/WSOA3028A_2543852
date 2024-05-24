@@ -16,7 +16,7 @@ function createBlogNav(){
         let href = "#" + trimHeader;
         a.setAttribute("href", href);
         // a.innerText = blogHeaders[i].innerText;
-        a.innerText = trimHeader;
+        a.innerText = front;
 
         blogArticles[i].setAttribute("id", trimHeader);
 
@@ -33,7 +33,7 @@ function backToTop(){
         a.innerText = "back to top";
         a.setAttribute("href", "#Top");
         nav.appendChild(a);
-    }
+        }
 }
 
 function blogOpenClose(){
