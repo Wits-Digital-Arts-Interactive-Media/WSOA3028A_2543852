@@ -48,17 +48,6 @@ aside nav ul li a{
     margin-right: 0%;
     font-weight: bold;
     font-size: 1.25rem;
-    /* animation: background-pan 20s linear infinite forwards;
-    background: linear-gradient(
-        to right,
-        rgb(26, 26, 237),
-        rgb(113, 188, 254),
-        rgb(24, 146, 247),
-        rgb(26, 26, 237)
-    );
-    background-size: 300%;
-    background-clip: text;
-    color: transparent; */
     color: black;
     border-radius: 0.5rem;
     margin-right: 1rem;
