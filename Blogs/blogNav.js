@@ -54,7 +54,7 @@ function blogOpenClose(){
 
         closeButton.addEventListener("click", (event)=>{
             blogContent[i].setAttribute("hidden", "until-found");
-            blogAnchors[i].scrollIntoView();
+            blogAnchors[i].scrollIntoView(true);
         })
     }
 }

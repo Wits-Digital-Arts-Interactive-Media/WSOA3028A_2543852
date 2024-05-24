@@ -163,9 +163,21 @@ Article h2:hover::after{
     width: 100%;
 }
 
+article nav{
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: rgb(243, 243, 243);
+    border-style: solid;
+    border-width: 3px;
+    transition: background-color 1000ms ease;
+    background-color: white;
+}
+article nav:hover{
+    background-color: rgb(243, 243, 243);
+}
 
 article nav a{
-    color: black;
+    color: black;  
 }
 
 h3{
@@ -183,3 +195,15 @@ th{
     margin: 0%;
 }
 
+button{
+    text-align: start;
+    border-radius: 0.5rem;
+    border-color: rgb(243, 243, 243);
+    border-style: solid;
+    border-width: 3px;
+    transition: background-color 1000ms ease;
+    background-color: white;
+}
+button:hover{
+    background-color: rgb(243, 243, 243);
+}
