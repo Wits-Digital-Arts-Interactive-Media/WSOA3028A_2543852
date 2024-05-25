@@ -6,7 +6,7 @@
     align-items: flex-start;
 }
 
-.designContainer{
+.articleContainer{
     position: relative;
     flex-direction: column;
     padding-left: 1rem;
