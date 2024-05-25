@@ -1,5 +1,5 @@
 .cardContainer{
-    width: 1000px;
+    width: 100%;
     display: flex;
     overflow: hidden;
     border-radius: 0.5rem;
