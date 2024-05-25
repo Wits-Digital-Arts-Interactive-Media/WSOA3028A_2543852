@@ -6,7 +6,7 @@
     align-items: flex-start;
 }
 
-.iterationContainer{
+.designContainer{
     position: relative;
     flex-direction: column;
     padding-left: 1rem;
@@ -120,13 +120,12 @@ article:hover::after{
 }
 
 article a{
-    display: flex;
-    width: 77.5vw;
     text-decoration: none;
 }
 
 article a h2{
-    width: auto;
+    display: flex;
+    width: 77.5vw;
     margin-right: 0%;
     font-weight: bold;
     font-size: 2rem;

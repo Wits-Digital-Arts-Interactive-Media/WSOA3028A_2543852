@@ -1,24 +1,24 @@
-const iterationAnchor = document.getElementsByClassName("iterationAnchor");
-const iterationContent = document.getElementsByClassName("content");
-const iterationHeader = document.getElementsByClassName("headerName")
+const designAnchor = document.getElementsByClassName("designAnchor");
+const designContent = document.getElementsByClassName("content");
+const designHeader = document.getElementsByClassName("headerName")
 
 function iterationOpenClose(){
-    for (let i=0; i<iterationAnchor.length; i++){
-        const trimHeader = iterationHeader[i].innerText.replaceAll(" ","") + "Content";
+    for (let i=0; i<designAnchor.length; i++){
+        const trimHeader = designHeader[i].innerText.replaceAll(" ","") + "Content";
         let _href = "#" + trimHeader;
-        iterationAnchor[i].setAttribute("href", _href);
+        designAnchor[i].setAttribute("href", _href);
 
-        iterationContent[i].setAttribute("id", trimHeader);
-        iterationContent[i].setAttribute("hidden", "until-found");
+        designContent[i].setAttribute("id", trimHeader);
+        designContent[i].setAttribute("hidden", "until-found");
 
         const closeButton = document.createElement("button");
         closeButton.innerText = "close";
-        iterationContent[i].appendChild(document.createElement("br"))
-        iterationContent[i].appendChild(closeButton);
+        designContent[i].appendChild(document.createElement("br"))
+        designContent[i].appendChild(closeButton);
 
         closeButton.addEventListener("click", (event)=>{
-            iterationContent[i].setAttribute("hidden", "until-found");
-            iterationAnchor[i].scrollIntoView(true);
+            designContent[i].setAttribute("hidden", "until-found");
+            designAnchor[i].scrollIntoView(true);
         })
     }
 }

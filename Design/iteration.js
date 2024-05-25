@@ -1,5 +1,5 @@
-const designIterationsNav = document.getElementById("iterationContainer");
-const iterations = document.getElementsByClassName("iteration");
+const designIterationsNav = document.getElementById("designContainer");
+const iterations = document.getElementsByClassName("design");
 
 const top = document.querySelector("main");
 top.setAttribute("id", "#Top");
