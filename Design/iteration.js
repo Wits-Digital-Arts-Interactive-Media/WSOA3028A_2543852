@@ -1,5 +1,5 @@
-const designIterationsNav = document.querySelectorAll("main > nav")[1];
-const iterations = document.querySelectorAll("main > article");
+const designIterationsNav = document.getElementById("iterationContainer");
+const iterations = document.getElementsByClassName("iteration");
 
 const top = document.querySelector("main");
 top.setAttribute("id", "#Top");
@@ -11,7 +11,7 @@ function createIterationNav(){
         const li = document.createElement("li");
         const a = document.createElement("a");
 
-        const href = iterations[i].querySelector("h3").innerText;
+        const href = iterations[i].querySelector("h2").innerText;
         const trim_href = href.replaceAll(" ","");
         a.setAttribute("href", "#"+trim_href);
         a.innerText = href;
