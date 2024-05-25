@@ -1,5 +1,23 @@
 .cardContainer{
+    width: 1000px;
     display: flex;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cards{
+    width: 100%;
+    min-width: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-shrink: 0;
+
+    animation: scroll 40s linear infinite;
+}
+.cards:hover{
+    animation-play-state: paused;
 }
 
 .wireframeCard{
@@ -8,11 +26,17 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     width: fit-content;
-    margin-right: 1rem;
+    flex: 0 0 20%;
 }
 
 .wireframeImage{
     width: 200px;
     border: rgb(243, 243, 243) solid 3px;
     border-radius: 0.5rem;
+}
+
+@keyframes scroll{
+    to{
+        transform: translateX(calc(-100% - 0.5rem));
+    }
 }
