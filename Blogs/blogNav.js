@@ -41,8 +41,8 @@ function blogOpenClose(){
         const splitHeader = blogHeaders[i].innerText.split(":");
         const front = splitHeader[0];
         const trimHeader = front.replaceAll(" ","") + "Content";
-        let href = "#" + trimHeader;
-        blogAnchors[i].setAttribute("href", href);
+        let _href = "#" + trimHeader;
+        blogAnchors[i].setAttribute("href", _href);
 
         blogContent[i].setAttribute("id", trimHeader);
         blogContent[i].setAttribute("hidden", "until-found");
