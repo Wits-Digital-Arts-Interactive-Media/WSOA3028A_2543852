@@ -7,13 +7,13 @@
 }
 
 .articleContainer{
-    max-width: 82.5%;
+    max-width: fit-content;
     position: relative;
     flex-direction: column;
     padding-left: 1rem;
-    padding-right: 2rem;
     display: flex;
     flex: 1 1;
+    overflow-y: auto;
 }
 
 aside{
@@ -91,7 +91,6 @@ aside nav ul li:hover::after{
 }
 
 article{
-    width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -127,7 +126,6 @@ article a{
 }
 
 article a h2{
-    min-width: 100%;
 
     margin-right: 0%;
     font-weight: bold;
