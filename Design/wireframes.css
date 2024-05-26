@@ -6,7 +6,7 @@
     gap: 1rem;
 }
 .cardContainer:hover ~ .cards{
-    animation-play-state: paused;
+    animation-play-state:paused;
 }
 
 .cards{
