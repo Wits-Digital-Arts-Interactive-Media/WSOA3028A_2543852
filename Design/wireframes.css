@@ -14,7 +14,7 @@
     justify-content: space-between;
     flex-shrink: 0;
     gap: 1rem;
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 /* .cards:hover{
     animation-play-state: paused;

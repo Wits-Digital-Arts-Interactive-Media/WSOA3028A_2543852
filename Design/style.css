@@ -91,6 +91,7 @@ aside nav ul li:hover::after{
 }
 
 article{
+    width: inherit;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -119,6 +120,7 @@ article::after{
 }
 article:hover::after{
     opacity: 1;
+    width: 100%;
 }
 
 article a{
@@ -126,7 +128,6 @@ article a{
 }
 
 article a h2{
-
     margin-right: 0%;
     font-weight: bold;
     font-size: 2rem;
