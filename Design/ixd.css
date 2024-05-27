@@ -1,3 +1,11 @@
 .infoStructure{
     width: 900px;
+    border: rgb(243, 243, 243) solid 3px;
+    border-radius: 0.5rem;
+}
+
+.userFlow{
+    width: 400px;
+    border: rgb(243, 243, 243) solid 3px;
+    border-radius: 0.5rem;
 }
