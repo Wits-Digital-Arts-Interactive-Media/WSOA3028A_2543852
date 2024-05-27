@@ -5,9 +5,6 @@
     display: flex;
     gap: 1rem;
 }
-.cardContainer:hover ~ .cards{
-    animation-play-state:paused;
-}
 
 .cards{
     display: flex;

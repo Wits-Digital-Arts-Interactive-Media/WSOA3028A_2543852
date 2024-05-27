@@ -1,0 +1,15 @@
+.tempImage{
+    width: 390px;
+    border: rgb(243, 243, 243) solid 3px;
+    border-radius: 0.5rem;
+    flex: 0 1;
+}
+
+.designBox{
+    border: rgb(243, 243, 243) solid 3px;
+    border-radius: 0.5rem;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-content: center;
+    margin-block: 0.5rem;
+}
