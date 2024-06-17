@@ -1,10 +1,18 @@
 :root{
-    --gradient: linear-gradient(
+    --light-grey: rgb(243, 243, 243);
+    --border-width: 3px;
+    --blue-gradient: linear-gradient(
         to right,
-        rgb(111, 7, 197),
-        rgb(187, 40, 232),
-        rgb(244, 12, 147),
-        rgb(111, 7, 197)
+        rgb(26, 26, 237),
+        rgb(113, 188, 254),
+        rgb(24, 146, 247),
+        rgb(26, 26, 237)
+    );
+    --black-gradient: linear-gradient(
+            90deg,
+            transparent,
+            black 7.5%,
+            transparent
     )
 }
 
@@ -26,6 +34,7 @@ header{
     height: 25px;    
     padding: 1rem;
     font-size: 1em;
+    border-bottom: var(--light-grey) solid 3px;
 }
 
 button{

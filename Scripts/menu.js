@@ -6,9 +6,7 @@ const menuItems = [
     {name:"Profile", href:  "Profile/index.html"}
 ];
 
-const menuButtons = [];
-
-//creating a nav-bar
+//creating a navigation
 export function initialize (currentPage){
     const nav = document.querySelector("header > nav");  //finding the nav element
     const ul = document.createElement("ul") ;    //creating an unordered list
@@ -29,7 +27,6 @@ export function initialize (currentPage){
             li.setAttribute("id", "activePage");
         }
         ul.appendChild(li);  //append the list Item to the unordered list
-        menuButtons.push(li);
     }
     nav.appendChild(ul);     //append the unordered list to the nav-element
 }
