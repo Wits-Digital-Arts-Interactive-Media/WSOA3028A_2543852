@@ -37,9 +37,13 @@ header{
 
 footer{
     display: flex;
+    justify-content: space-between;
     padding: 1rem;
     font-style: italic;
     border-top: var(--light-grey) solid var(--border-width);
+}
+.footer-socials{
+    width: 25%;
 }
 
 main{
