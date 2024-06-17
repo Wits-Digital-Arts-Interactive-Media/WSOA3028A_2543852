@@ -17,46 +17,33 @@
 }
 
 html{
+    font-family: 'Satoshi', sans-serif;
     scroll-behavior: smooth;
     background-color: white;
 }
 
 body {
-    font-family: 'Satoshi', sans-serif;
     margin: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
+    padding: 0%;
 }
 
 header{
     display: flex;
     justify-content: flex-end;
-    height: 25px;    
-    padding: 1rem;
+    align-items: center;
+    padding: 0% 1rem;
     border-bottom: var(--light-grey) solid var(--border-width);
 }
 
 footer{
     display: flex;
     padding: 1rem;
+    font-style: italic;
     border-top: var(--light-grey) solid var(--border-width);
-}
-
-button{
-    font-family: 'Satoshi', sans-serif;
 }
 
 main{
     padding: 0% 1.5rem; 
-}
-
-footer{
-    padding: 1em;
-    font-style: italic;
-}
-
-hr{
-    margin: 0%;
 }
 
 #webName{
@@ -64,68 +51,60 @@ hr{
     width: fit-content;
 }
 
+header nav{
+    align-items: center;
+}
 header nav ul{
-    margin-top: 0%;
     list-style: none;   /* removes the points on the list*/
 }
-
 header nav ul li{
-    display: inline-flex;   /*the size of the content inside the li*/
+    display: inline-flex;
     margin-right: 1rem;
     position: relative;
 }
 header nav ul li::after{
-    background: linear-gradient(
-    90deg,
-    transparent,
-    black 7.5%,
-    transparent
-    );
-    width: 50%;
-    height: 3px;
+    background-color: black;
+    width: 100%;
+    height: var(--border-width);
     position: absolute;
     bottom: -1px;
-    left: 0%;
     opacity: 0;
     content: "";
-    transition: opacity 1000ms ease,
-                width 2000ms ease;
-
+    transition: opacity 1000ms ease;
 }
 header nav ul li:hover::after{
     opacity: 1;
-    width: 100%;
 }
-
+header nav ul li a{
+    height: 100%;
+    text-decoration: none;
+}
+header nav ul li a:visited{
+    color: black;
+    height: 100%;
+    text-overflow: clip;
+    text-decoration: none;
+}
 #activePage{
     position: relative;
 }
 #activePage::after{
-    background: linear-gradient(
-    90deg,
-    transparent,
-    black 7.5%,
-    transparent
-    );
+    background-color: black;
     width: 100%;
     height: 3px;
     position: absolute;
     bottom: -1px;
-    left: 0%;
     content: "";
     opacity: 1;
-    
 }
 
 .titles{
     margin: 150px 0%;
 }
-
 .headerContainer{
     display: inline-block;
     padding-left: 2rem;
 }
-
 .subheaderContainer{
     width: fit-content;
     padding-left: 2rem;
@@ -142,8 +121,7 @@ header nav ul li:hover::after{
 
 h1{
     color: black;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0px;
     font-size: 5rem;
     border-right: 5px solid;
     width: 100%;
@@ -161,22 +139,12 @@ h1{
         rgb(113, 188, 254),
         rgb(24, 146, 247),
         rgb(26, 26, 237)
-    );
+    ) 300% text;
     background-size: 300%;
     background-clip: text;
     color: transparent;
 }
 
-header nav ul li a{
-    height: 100%;
-    text-decoration: none;
-}
-header nav ul li a:visited{
-    color: black;
-    height: 100%;
-    text-overflow: clip;
-    text-decoration: none;
-}
 
 ::selection{
     background-color: black;
