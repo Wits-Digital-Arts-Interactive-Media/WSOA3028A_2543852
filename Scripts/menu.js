@@ -6,12 +6,6 @@ const menuItems = [
     {name:"Profile", href:  "Profile/index.html"}
 ];
 
-const footerLinks = [
-    {contact:"GitHub", href: "https://github.com/JayQkew"},
-    {contact:"itch.io", href: "https://qkewgames.itch.io/"},
-    {contact:"LeetCode", href: "https://leetcode.com/u/JayQkew/"}
-]
-
 //creating a navigation
 export function initialize (currentPage){
     const nav = document.querySelector("header > nav");  //finding the nav element
@@ -42,23 +36,8 @@ export function initialize (currentPage){
 function addFooter(){
     const footer = document.querySelector("footer");
     const content = document.createElement("p");
-    const socials = document.createElement("div");
 
     content.innerText = "Brought to you by Jay-Lee Shih 2024"
     content.setAttribute("class", "footer-content");
     footer.appendChild(content);
-
-    for (const social of footerLinks) {
-        const link = document.createElement("a");
-        link.setAttribute("href", social.href);
-        link.innerText = social.contact;
-        socials.appendChild(link);
-        
-        const br = document.createElement("br");
-        socials.appendChild(br);
-    }
-    
-    socials.setAttribute("class", "footer-socials")
-    footer.appendChild(socials);
-
 }

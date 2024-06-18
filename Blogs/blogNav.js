@@ -1,5 +1,5 @@
 const blogNav = document.getElementById("blogNav");
-const blogArticles = document.getElementsByClassName("writting");
+const blogArticles = document.getElementsByClassName("card");
 const blogContent = document.getElementsByClassName("e-content");
 const blogAnchors = document.getElementsByClassName("blogAnchor");
 const blogHeaders = document.getElementsByClassName("blogName");

@@ -37,7 +37,7 @@ header{
 
 footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 1rem;
     font-style: italic;
     border-top: var(--light-grey) solid var(--border-width);
@@ -122,7 +122,6 @@ header nav ul li a:visited{
     overflow: hidden;
     animation:  typing 1.5s;
 }
-
 h1{
     color: black;
     margin: 0px;
@@ -134,7 +133,6 @@ h1{
     animation:  typing 1.5s,
                 cursor 0.4s step-end infinite alternate;
 }
-
 .coolFont{
     animation: background-pan 20s linear infinite forwards;
     background: linear-gradient(
@@ -148,12 +146,49 @@ h1{
     background-clip: text;
     color: transparent;
 }
-
-
 ::selection{
     background-color: black;
     color: white;
     text-decoration: white;
+}
+
+.card{
+    border-radius: 0.5rem;
+    border-color: rgb(243, 243, 243);
+    border-style: solid;
+    border-width: 3px;
+    margin: 1rem;
+    padding: 1rem;
+    /* padding-top: 3rem;
+    padding-bottom: 3rem; */
+    position: relative;
+}
+.card::after{
+    border-radius: 25%;
+    background: linear-gradient(
+    90deg,
+    transparent,
+    black 7.5%,
+    transparent
+    );
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0%;
+    opacity: 0;
+    content: "";
+    transition: opacity 1000ms ease,
+                width 2000ms ease;
+
+}
+.card:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 

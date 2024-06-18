@@ -14,6 +14,7 @@
 }
 
 aside{
+    margin-top: 1rem;
     padding-right: 2rem;
     border-radius: 0.5rem;
     border-color: rgb(243, 243, 243);
@@ -88,39 +89,6 @@ aside nav ul li:hover::after{
     width: 100%;
 }
 
-
-
-article{
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-color: rgb(243, 243, 243);
-    border-style: solid;
-    border-width: 3px;
-    position: relative;
-}
-article::after{
-    border-radius: 25%;
-    background: linear-gradient(
-    90deg,
-    transparent,
-    black 7.5%,
-    transparent
-    );
-    width: 25%;
-    height: 3px;
-    position: absolute;
-    bottom: -3px;
-    left: 0%;
-    opacity: 0;
-    content: "";
-    transition: opacity 1000ms ease,
-                width 2000ms ease;
-}
-article:hover::after{
-    opacity: 1;
-    width: 100%;
-}
 
 article a{
     text-decoration: none;
