@@ -26,6 +26,14 @@ a{
     color: black;
 }
 
+.h-card{
+    display: flex;
+    margin-block: 3rem;
+}
+.u-photo{
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
 .card p,
 .card h2{
     margin: 0%;

@@ -3,7 +3,6 @@ const menuItems = [
     {name:"Projects", href: "Projects/index.html"},
     {name:"Blogs" , href: "Blogs/index.html" },
     {name:"Web Design" , href: "Design/index.html"},
-    {name:"Profile", href:  "Profile/index.html"}
 ];
 
 //creating a navigation
