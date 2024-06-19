@@ -31,6 +31,7 @@ export function initialize (currentPage){
     nav.appendChild(ul);     //append the unordered list to the nav-element
 
     addFooter();
+    addContactButton();
 }
 
 function addFooter(){
@@ -40,4 +41,13 @@ function addFooter(){
     content.innerText = "Brought to you by Jay-Lee Shih 2024"
     content.setAttribute("class", "footer-content");
     footer.appendChild(content);
+}
+
+function addContactButton(){
+    const button = document.createElement("button");
+    const header = document.querySelector("header");
+
+    button.innerText = "Contact";
+    button.setAttribute("class", "contact-button");
+    header.appendChild(button);
 }

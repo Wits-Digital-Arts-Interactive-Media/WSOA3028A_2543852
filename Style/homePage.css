@@ -10,8 +10,17 @@
     font-size: 1.5rem;
 }
 
+.hero-section{
+    border: var(--light-grey) solid 3px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 560px;
+}
+
 a{
     text-decoration: none;
+    color: black;
 }
 
 .card p,

@@ -29,16 +29,16 @@ body {
 
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 0% 1rem;
+    padding: 0% 2rem;
     border-bottom: var(--light-grey) solid var(--border-width);
 }
 
 footer{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     font-style: italic;
     border-top: var(--light-grey) solid var(--border-width);
 }
@@ -51,19 +51,20 @@ main{
 }
 
 #webName{
-    margin-right: auto;
     width: fit-content;
 }
 
 header nav{
     align-items: center;
+    justify-content: space-around;
 }
 header nav ul{
     list-style: none;   /* removes the points on the list*/
+    padding-left: 0%;
 }
 header nav ul li{
     display: inline-flex;
-    margin-right: 1rem;
+    margin-inline: 1rem;
     position: relative;
 }
 header nav ul li::after{
@@ -152,6 +153,17 @@ h1{
     background-color: black;
     color: white;
     text-decoration: white;
+}
+
+.contact-button{
+    border: 0;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background: var(--blue-gradient);
+    background-size: 300%;
+    border-radius: 1rem;
+    animation: background-pan 20s linear infinite forwards;
 }
 
 .card{
