@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./Style/homePage.css">
     <script type="module"> import {initialize } from "./Scripts/menu.js" 
         initialize("Home")</script>
+    <script type="module" src="Scripts/text-scroll.js"></script>
     <title>Jay's Portfolio</title>
 </head>
 <body>
@@ -44,6 +45,9 @@
     </header>
     <main>
         <div id="hero-banner">
+            <div id="hero-subheading">
+                <span id="text-scroll">Game Developer</span>
+            </div>
             <div id="hero-title">
                 <h1>
                     Hey, I'm 
@@ -57,12 +61,10 @@
             </div>
         </div>
 
-        <a href="Projects/index.html">
-            <div class="hero-section">
-                <h2>Recent Projects</h2>
-                <p>A collection of my game-dev, coding, and art projects</p>
-            </div>
-        </a>
+        <div class="hero-section">
+            <h2>Recent Projects</h2>
+            <p>A collection of my game-dev, coding, and art projects</p>
+        </div>
 
         <a href="Blogs/index.html">
             <div class="hero-section">
@@ -78,11 +80,6 @@
             </div>
         </a>
 
-        <a href="Profile/index.html">
-            <div class="hero-section">
-                <h2>About Me</h2>
-            </div>
-        </a>
     </main>
     <footer>
     </footer>
