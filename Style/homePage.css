@@ -46,11 +46,14 @@
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .h-card{
     display: flex;
+    align-items: center;
     margin-block: 3rem;
+    height: 450px;
 }
 .u-photo{
     border-radius: 1rem;

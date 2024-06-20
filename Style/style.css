@@ -203,6 +203,9 @@ h1{
     cursor: pointer;
 }
 
+a:hover{
+    cursor: pointer;
+}
 
 @keyframes cursor {
     50%{
