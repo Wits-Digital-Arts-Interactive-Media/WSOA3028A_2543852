@@ -47,9 +47,15 @@ a{
     flex-grow: 1;
     flex-shrink: 1;
     border-radius: 1rem;
-    background-color: var(--light-grey);
 }
 .display-item img{
+    mask-image: linear-gradient(
+        90deg,
+        transparent,
+        black 35%
+    );
+    mask-size: 300%;
+    mask-position: 100%;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -58,10 +64,16 @@ a{
     flex-grow: 1;
     flex-shrink: 1;
     border-radius: 1rem;
-    background-color: var(--light-grey);
+    transition: mask-position 1000ms ease;
 }
+.display-item img:hover{
+    mask-position: 0%;
+}
+
 .display-name{
     position: absolute;
+    margin: 1rem;
+    font-size: 3rem;
 }
 
 
