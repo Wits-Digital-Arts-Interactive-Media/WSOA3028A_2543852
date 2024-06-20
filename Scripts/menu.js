@@ -7,6 +7,7 @@ const menuItems = [
 
 //creating a navigation
 export function initialize (currentPage){
+    add_hamburger();
 
     const nav = document.querySelector("header > nav");  //finding the nav element
     const ul = document.createElement("ul") ;    //creating an unordered list
@@ -28,12 +29,10 @@ export function initialize (currentPage){
         }
         ul.appendChild(li);  //append the list Item to the unordered list
     }
-    nav.setAttribute("id", "navbar");
     nav.appendChild(ul);     //append the unordered list to the nav-element
 
     add_footer();
     add_contact();
-    add_hamburger();
 }
 
 function add_footer(){
@@ -58,7 +57,6 @@ function add_hamburger(){
     const header = document.querySelector("header");
 
     const hamburger_icon = document.createElement("i");
-    const close_icon = document.createElement("i");
 
     const label = document.createElement("label");
     
@@ -70,13 +68,8 @@ function add_hamburger(){
     hamburger_icon.setAttribute("class", "bx bx-menu");
     hamburger_icon.setAttribute("id", "menu-icon");
 
-    close_icon.setAttribute("class", "bx bx-x");
-    close_icon.setAttribute("id", "close-icon");
-
-    
     label.setAttribute("class", "icons");
     label.setAttribute("for", "check");
     label.appendChild(hamburger_icon);
-    label.appendChild(close_icon);
     header.appendChild(label);
 }
