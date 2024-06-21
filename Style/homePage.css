@@ -62,6 +62,25 @@
     margin-bottom: 1rem;
     display: flex;
 }
+
+@media (max-width: 850px){
+    .hero-section-writting{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    .hero-section-writting{
+        padding: var(--padding-med);
+        margin-bottom: var(--padding-med);
+    }
+}
+@media (max-width: 450px){
+    .hero-section-writting{
+        padding: var(--padding-small);
+        margin-bottom: var(--padding-small);
+    }
+}
+
 .hero-section-titles{
     min-width: fit-content;
     display: flex;
@@ -69,6 +88,7 @@
     align-items: start;
     justify-content: center;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     flex-grow: 1;
 }
 .hero-section-titles h2{
@@ -76,6 +96,23 @@
 }
 .hero-section-titles p{
     margin: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .hero-section-titles h2{
+        font-size: 1.25rem;
+    }
+    .hero-section-titles p{
+        font-size: 0.87rem;
+    }
+}
+@media (max-width: 450px){
+    .hero-section-titles h2{
+        font-size: 1rem;
+    }
+    .hero-section-titles p{
+        font-size: 0.75rem;
+    }
 }
 
 a{
@@ -100,6 +137,23 @@ a{
     gap: 1rem;
     justify-content: space-around;
 }
+
+@media (max-width: 850px){
+    .display{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    .display{
+        padding: var(--padding-med);
+    }
+}
+@media (max-width: 450px){
+    .display{
+        padding: var(--padding-small);
+    }
+}
+
 .display-item{
     display: flex;
     align-items: center;
@@ -138,14 +192,35 @@ a{
     margin: 1rem;
     font-size: 3rem;
 }
+
 .display-writting{
     border: var(--light-grey) solid 3px;
     border-radius: 1rem;
     padding: 1rem;
 }
 
-
-
+@media (max-width: 700px){
+    .display-writting{
+        padding: var(--padding-med);
+    }
+    .display-writting a h3{
+        font-size: 1.25rem;
+    }
+    .display-writting a p{
+        font-size: 0.87rem;
+    }
+}
+@media (max-width: 450px){
+    .display-writting{
+        padding: var(--padding-small);
+    }
+    .display-writting a h3{
+        font-size: 1rem;
+    }
+    .display-writting a p{
+        font-size: 0.7rem;
+    }
+}
 
 @keyframes fadeInOut {
     0%{

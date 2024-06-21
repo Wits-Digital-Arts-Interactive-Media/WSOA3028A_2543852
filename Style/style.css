@@ -45,6 +45,13 @@ header{
     border-bottom: var(--light-grey) solid var(--border-width);
 }
 
+@media (max-width: 450px){
+    header{
+        padding: 0% 1rem;
+    }
+
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -274,6 +281,14 @@ a:hover{
         position: absolute;
         right: 80px;
     }
+}
+
+@media (max-width: 450px){
+    .contact-button{
+        position: absolute;
+        right: 55px;
+    }
+
 }
 
 @keyframes cursor {
