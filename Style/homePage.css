@@ -132,6 +132,29 @@ a{
     margin-right: 2rem;
 }
 
+@media (max-width: 700px){
+    .u-photo{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 450px){
+    .h-card{
+        flex-direction: column;
+    }
+
+    .u-photo{
+        margin: 0rem;
+    }
+
+    .myInfo{
+        text-align: center;
+    }
+
+    .text p{
+        margin: 1rem;
+    }
+}
+
 .display{
     display: flex;
     gap: 1rem;
