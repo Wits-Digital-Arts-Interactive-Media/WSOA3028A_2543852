@@ -56,7 +56,7 @@ function blogOpenClose(){
             blogContent[i].setAttribute("hidden", "until-found");
             blogAnchors[i].scrollIntoView(true);
         })
-        closeButton.addEventListener("touchstart", (event)=>{
+        closeButton.addEventListener("touchend", (event)=>{
             blogContent[i].setAttribute("hidden", "until-found");
             blogAnchors[i].scrollIntoView(true);
         },false)
