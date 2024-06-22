@@ -1,16 +1,12 @@
-/* .cardContainer{
-    border-radius: 0.5rem;
-    user-select: none;
-    display: flex;
-    gap: 1rem;
-} */
-
 .cards{
     gap: 1rem;
-    columns: 3;
-    flex-wrap: wrap;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+}
+
+@media (max-width: 700px){
+    .cards{
+        flex-direction: column;
+    }
 }
 
 

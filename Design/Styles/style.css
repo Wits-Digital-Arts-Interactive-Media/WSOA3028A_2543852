@@ -98,7 +98,6 @@ aside nav ul li:hover::after{
 }
 
 article{
-    width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;

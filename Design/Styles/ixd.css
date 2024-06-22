@@ -1,5 +1,5 @@
 .infoStructure{
-    width: 900px;
+    width: 100%;
     border: rgb(243, 243, 243) solid 3px;
     border-radius: 0.5rem;
 }
@@ -9,3 +9,4 @@
     border: rgb(243, 243, 243) solid 3px;
     border-radius: 0.5rem;
 }
+
