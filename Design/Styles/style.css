@@ -7,13 +7,11 @@
 }
 
 .articleContainer{
-    max-width: fit-content;
+    width: 100%;
+    display: flex;
     position: relative;
     flex-direction: column;
     padding-left: 1rem;
-    display: flex;
-    flex: 1 1;
-    overflow-y: auto;
 }
 
 aside{
@@ -29,6 +27,9 @@ aside{
 @media (max-width: 700px){
     aside{
         display: none;
+    }
+    .articleContainer{
+        padding-left: 0%;
     }
 }
 
@@ -97,7 +98,7 @@ aside nav ul li:hover::after{
 }
 
 article{
-    width: inherit;
+    width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -225,6 +226,7 @@ td{
     border: solid black;
     margin: 0%;
 }
+
 
 button{
     text-align: start;

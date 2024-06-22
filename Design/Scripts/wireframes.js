@@ -11,18 +11,18 @@ function addIterationHeader(){
     }
 }
 
-for (let i=0; i<cardContainers.length; i++) {
-  cardContainers[i].addEventListener("mouseenter", (e) =>{
-    cards[i*2].style.animationPlayState = "paused";
-    cards[i*2+1].style.animationPlayState = "paused";
-  })
-}
+// for (let i=0; i<cardContainers.length; i++) {
+//   cardContainers[i].addEventListener("mouseenter", (e) =>{
+//     cards[i*2].style.animationPlayState = "paused";
+//     cards[i*2+1].style.animationPlayState = "paused";
+//   })
+// }
 
-for (let i=0; i<cardContainers.length; i++) {
-  cardContainers[i].addEventListener("mouseleave", (e) =>{
-    cards[i*2].style.animationPlayState = "running";
-    cards[i*2+1].style.animationPlayState = "running";
-  })
-}
+// for (let i=0; i<cardContainers.length; i++) {
+//   cardContainers[i].addEventListener("mouseleave", (e) =>{
+//     cards[i*2].style.animationPlayState = "running";
+//     cards[i*2+1].style.animationPlayState = "running";
+//   })
+// }
 
 addIterationHeader();
