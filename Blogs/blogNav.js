@@ -59,7 +59,7 @@ function blogOpenClose(){
         closeButton.addEventListener("touchstart", (event)=>{
             blogContent[i].setAttribute("hidden", "until-found");
             blogAnchors[i].scrollIntoView(true);
-        })
+        },false)
     }
 }
 
