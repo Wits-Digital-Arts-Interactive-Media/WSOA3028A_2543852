@@ -25,6 +25,36 @@ aside{
 
 }
 
+@media (max-width: 700px){
+    aside{
+        display: none;
+    }
+    .articleContainer{
+        padding: var(--padding-med);
+    }
+    .blogsContainer{
+        padding: var(--padding-med);
+    }
+    .card{
+        margin: var(--padding-med);
+        padding: var(--padding-med);
+    }
+}
+
+@media (max-width: 450px){
+    .articleContainer{
+        padding: var(--padding-small);
+    }
+    .blogsContainer{
+        padding: var(--padding-small);
+        margin: var(--padding-small);
+    }
+    .card{
+        margin: var(--padding-small);
+        padding: var(--padding-small);
+    }
+}
+
 aside nav{
     width: 155px;
 }

@@ -20,6 +20,10 @@ function iterationOpenClose(){
             designContent[i].setAttribute("hidden", "until-found");
             designAnchor[i].scrollIntoView(true);
         })
+        closeButton.addEventListener("touchstart", (event)=>{
+            designContent[i].setAttribute("hidden", "until-found");
+            designAnchor[i].scrollIntoView(true);
+        })
     }
 }
 
