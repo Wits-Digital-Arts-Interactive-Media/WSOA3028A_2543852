@@ -26,6 +26,12 @@ aside{
     top: 2rem;
 }
 
+@media (max-width: 700px){
+    aside{
+        display: none;
+    }
+}
+
 aside nav{
     width: 155px;
 }
