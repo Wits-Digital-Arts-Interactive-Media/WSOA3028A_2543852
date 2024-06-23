@@ -33,7 +33,7 @@ export function initialize (currentPage){
     nav.appendChild(ul);     //append the unordered list to the nav-element
 
     add_footer();
-    add_contact();
+    //add_contact();
 }
 
 function add_footer(){
