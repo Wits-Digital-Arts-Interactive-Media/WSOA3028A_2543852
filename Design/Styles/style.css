@@ -6,6 +6,19 @@
     align-items: flex-start;
 }
 
+@media (max-width: 700px){
+    .contentContainer{
+        padding-left: var(--padding-med);
+        padding-right: var(--padding-med);
+    }
+}
+@media (max-width: 450px){
+    .contentContainer{
+        padding-left: var(--padding-small);
+        padding-right: var(--padding-small);
+    }
+}
+
 .articleContainer{
     width: 100%;
     display: flex;
